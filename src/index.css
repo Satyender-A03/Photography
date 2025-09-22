@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "react-image-gallery/styles/css/image-gallery.css";
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}
+.animate-scroll {
+  width: max-content;
+  animation: scroll 50s linear infinite;
+}
