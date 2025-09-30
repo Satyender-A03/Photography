@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Wedding from "./components/Gallery/Wedding";
-import Fashion from "./components/Gallery/fashion";
+import Fashion from "./components/Gallery/Fashion";
 import Product from "./components/Gallery/Product";
 
 const App = () => {
