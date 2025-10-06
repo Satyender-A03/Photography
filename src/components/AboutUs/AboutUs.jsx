@@ -34,7 +34,7 @@ const AboutUs = () => {
           </p>
 
           {/* Contact Info */}
-          <div className="w-full md:w-[80%] mx-auto flex flex-col flex-wrap md:flex-row bg-white/20 backdrop-blur-sm justify-center items-center gap-4 rounded">
+          <div className="w-full md:w-[80%] mx-auto flex flex-col flex-wrap md:flex-row bg-white/20 backdrop-blur-sm justify-center items-center gap-2 rounded">
             <div className="flex items-center gap-2 px-4 py-2">
               <FaPhone className="w-4 h-4 text-black" />
               <span className="text-gray-700 text-sm md:text-base">

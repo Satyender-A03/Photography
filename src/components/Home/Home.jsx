@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCamera, FaPhone, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import bride1 from "../../assets/Wedding/bride1.jpg";
 import bride2 from "../../assets/Wedding/bride2.jpg";
@@ -175,7 +176,7 @@ const Home = () => {
       </div>
 
       {/* xkkckld */}
-      <div className="py-12 px-20 bg-[#faf8f5]">
+      <div className="py-12 px-10 bg-[#faf8f5]">
         <h2 className="text-5xl font-bold text-center mb-10">Our Services</h2>
 
         <div className="flex flex-col md:flex-row md:flex-wrap gap-10">
@@ -208,16 +209,28 @@ const Home = () => {
               </p>
 
               {/* Button */}
-              <button className="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold px-5 py-2 rounded shadow">
-                View Details →
-              </button>
+              <Link
+                to={
+                  service.title === "Wedding Photography"
+                    ? "/wedding"
+                    : service.title === "Fashion Photography"
+                    ? "/fashion"
+                    : service.title === "Product Shoot"
+                    ? "/product"
+                    : "#"
+                }
+              >
+                <button className="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold px-5 py-2 rounded shadow">
+                  View Details →
+                </button>
+              </Link>
             </div>
           ))}
         </div>
       </div>
 
       {/* jsnkcajsn */}
-      <div className="py-16 px-20 bg-white text-center">
+      <div className="py-16 px-10 bg-white text-center">
         {/* Heading */}
         <h2 className="text-3xl font-bold mb-4">Why Choose Us?</h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
@@ -321,14 +334,14 @@ const Home = () => {
 
       {/* kfmadskm */}
 
-      <div className="relative w-full h-[90vh] overflow-hidden">
+      <div className="relative w-full h-[70vh] md:h-[80vh] overflow-hidden">
         {/* Background Image */}
-        <div className="ooverflow-hidden absolute w-full top-[-80%]">
+        <div className="overflow-hidden absolute w-full md:top-[-70%]">
           <img src={bride1} alt="Background" className="w-full " />
         </div>
 
         {/* YouTube Video */}
-        <div className="relative flex items-center justify-center w-full h-full">
+        <div className="relative flex justify-center top-45 md:top-20">
           <iframe
             className="w-[70%] md:w-[50%] aspect-video rounded-lg shadow-lg"
             src="https://www.youtube.com/embed/UAH8y0aHubQ?rel=0&autoplay=0"

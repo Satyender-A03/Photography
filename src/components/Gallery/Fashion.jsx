@@ -54,8 +54,6 @@ const Fashion = () => {
     fashion21,
     fashion22,
     fashion23,
-    fashion24,
-    fashion25,
   ];
 
   return (
@@ -72,50 +70,52 @@ const Fashion = () => {
         </div>
 
         {/* Overlay Content */}
-        <div className="max-w-[50%] md:w-[60%] h-auto md:h-[60vh] bg-white/40 backdrop-blur-md mx-auto relative z-10 p-6 md:p-10 shadow-lg mt-10 md:mt-0">
-          <h2 className="text-2xl md:text-4xl font-serif font-bold my-6">
-            Fashion Photography
+        <div className="w-[90%] md:w-[60%] lg:w-[50%] h-auto md:h-[65vh] bg-white/40 backdrop-blur-md pt-10 md:pt-20 mx-auto relative z-10 p-6 md:p-10 shadow-lg">
+          <h2 className="text-2xl md:text-4xl font-serif font-bold mb-6 md:mb-8">
+            Fashion Photographers
           </h2>
 
           {/* Camera Icon */}
-          <div className="flex justify-center items-center my-10 mt-12">
+          <div className="flex justify-center items-center my-4 md:my-6">
             <FaCamera className="w-6 h-6 text-black" />
           </div>
 
-          <p className="text-lg md:text-xl text-gray-800 my-6 mx-15">
+          <p className="text-lg md:text-xl text-gray-800 my-4 md:my-8">
             Fashion photography has become so famous as photographs clicked
             during this shoot creates lifetime memories for the couple to
             cherish forever.
           </p>
 
           {/* Phone & Email */}
-          <div className="max-w-[75%] mx-auto flex flex-wrap flex-col md:flex-row justify-center my-6 items-center gap-8 bg-white/20 backdrop-blur-sm rounded p-2">
+          <div className="max-w-[85%] mx-auto flex flex-wrap flex-col md:flex-row justify-center my-6 items-center gap-4 bg-white/20 backdrop-blur-sm rounded p-2">
             <div className="flex items-center gap-2">
               <FaPhone className="w-4 h-4 text-black" />
               <span className="text-gray-700 text-sm">+91 7303233568</span>
             </div>
             <div className="flex items-center gap-2">
               <FaEnvelope className="w-4 h-4 text-black" />
-              <span className="text-gray-700 text-sm text-center">
-                theweddingritualsbyvishal@gmail.com
+              <span className="text-gray-700 text-sm ">
+                theweddingritualsbykuldeep@gmail.com
               </span>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full py-12 px-10 md:px-15 flex gap-10 items-center">
+
+      <div className="w-full py-12 px-7 md:px-15 flex md:flex-nowrap flex-wrap gap-4 md:gap-20 justify-center">
         {/* Left Section */}
         <div className="w-[70%] text-center md:text-left ">
           {/* Camera Icon with Divider */}
-          <div className="flex items-center justify-center md:justify-start mb-6">
+
+          <h2 className="text-3xl md:text-4xl flex justify-center items-center font-serif font-bold leading-snug">
+            Best Fahion <br /> Photographers in <br /> Delhi NCR.
+          </h2>
+
+          <div className="flex items-center justify-center md:justify-start mb-6 mt-8 md:mt-4">
             <div className="flex-1 border-t border-gray-300"></div>
             <FaCamera className="mx-3 text-gray-700" />
-            <div className="flex-1 border-t border-gray-300 hidden md:block"></div>
+            <div className="flex-1 border-t border-gray-300"></div>
           </div>
-
-          <h2 className="text-3xl md:text-4xl flex justify-center font-serif font-bold leading-snug">
-            Best Wedding <br /> Photographers in <br /> Delhi NCR.
-          </h2>
         </div>
 
         {/* Right Section */}
@@ -132,18 +132,18 @@ const Fashion = () => {
             website and fashion lookbook photography, with highly experienced,
             creative photographers and a dedicated post-production studio to
             ensure a comprehensive understanding of what’s required to meet your
-            brief.{" "}
+            brief.
           </p>
         </div>
       </div>
       {/* Gallery */}
-      <div className="w-full flex flex-wrap gap-4 p-6 justify-center">
+      <div className="w-full flex flex-wrap gap-4 mb-15 justify-center">
         {images.map((img, index) => (
           <div key={index} className="overflow-hidden rounded-lg shadow-md">
             <img
               src={img}
-              alt={`Wedding ${index + 1}`}
-              className="w-85 object-cover hover:scale-130 transition-transform duration-500"
+              alt={`Fashion ${index + 1}`}
+              className="w-90 md:w-85 object-cover hover:scale-120 transition-transform duration-500"
             />
           </div>
         ))}
