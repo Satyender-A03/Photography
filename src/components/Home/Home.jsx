@@ -176,7 +176,7 @@ const Home = () => {
       </div>
 
       {/* xkkckld */}
-      <div className="py-12 px-10 bg-[#faf8f5]">
+      <div className="py-12 px-8 bg-[#faf8f5]">
         <h2 className="text-5xl font-bold text-center mb-10">Our Services</h2>
 
         <div className="flex flex-col md:flex-row md:flex-wrap gap-10">
@@ -278,7 +278,7 @@ const Home = () => {
         </div>
 
         {/* Right Side Image (Sticky Effect on Desktop) */}
-        <div className="w-full md:w-[60%] h-[80vh] md:h-[90vh] md:sticky top-0">
+        <div className="w-full md:w-[60%] h-[80vh] md:h-[90vh] md:sticky">
           <img
             src={bride8}
             alt="Bride"
@@ -290,7 +290,7 @@ const Home = () => {
       {/* Second Section */}
       <div className="flex flex-col md:flex-row h-auto md:h-[100%] m-5 md:m-20 border">
         {/* Left Side Image */}
-        <div className="w-full md:w-[50%] h-[90vh] md:h-screen md:sticky">
+        <div className="w-full md:w-[50%] h-[75vh] md:h-screen md:sticky">
           <img
             src={bride15}
             alt="Bride"
@@ -334,7 +334,7 @@ const Home = () => {
 
       {/* kfmadskm */}
 
-      <div className="relative w-full h-[70vh] md:h-[80vh] overflow-hidden">
+      <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
         {/* Background Image */}
         <div className="overflow-hidden absolute w-full md:top-[-70%]">
           <img src={bride1} alt="Background" className="w-full " />

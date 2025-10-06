@@ -126,7 +126,7 @@ const Wedding = () => {
             <img
               src={img}
               alt={`Wedding ${index + 1}`}
-              className="w-90 md:w-85 object-cover hover:scale-120 transition-transform duration-500"
+              className="w-85 object-cover hover:scale-120 transition-transform duration-500"
             />
           </div>
         ))}
